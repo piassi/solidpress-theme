@@ -1,0 +1,175 @@
+// Bootstrap
+@import 'mixins';
+@import 'bootstrap';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+// Common components
+@import '../../components/header';
+
+// Additional imports
+@import '../../node_modules/animate.css/animate.min.css';
+
+$font-size-sm: 0.85rem;
+
+.page-wrapper {
+	overflow: hidden;
+}
+
+.animate-in-view {
+	opacity: 0;
+}
+
+.text-sm {
+	font-size: $font-size-sm;
+}
+
+img {
+	max-width: 100%;
+}
+
+.flex-center {
+	@extend .d-flex, .align-items-center, .justify-content-center;
+}
+
+body {
+	background-color: #fff;
+	font-family: $font-family-sans-serif;
+}
+
+.line-decoration {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 5px;
+	background-color: $primary;
+	position: absolute;
+	left: 0;
+}
+
+.bottom-line-decoration {
+	position: relative;
+
+	&:after {
+		@extend .line-decoration;
+		bottom: 0;
+		margin-bottom: -2.5px;
+	}
+}
+
+.top-line-decoration {
+	position: relative;
+
+	&:before {
+		@extend .line-decoration;
+		top: 0;
+		margin-top: -2.5px;
+	}
+}
+
+.centered-line-decoration {
+	&:before,
+	&:after {
+		left: 50%;
+		margin-left: -12.5px;
+	}
+}
+
+.form-group {
+	> label {
+		color: darken($color: $primary, $amount: 20);
+	}
+}
+
+.btn {
+	font-weight: 600;
+	font-size: $font-size-sm;
+	text-transform: uppercase;
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.btn-outline-dark:not(:disabled):not(.disabled).active,
+.btn-outline-dark:focus,
+.btn-outline-dark:hover,
+.btn-outline-dark:active {
+	background-color: transparent;
+	color: darken($color: $primary, $amount: 20);
+	border-color: $primary;
+	box-shadow: $input-focus-box-shadow;
+}
+
+.btn .icon {
+	font-size: 0.65rem;
+}
+
+.font-size-lg {
+	font-size: pxToRem(14);
+}
+
+.font-size-sm {
+	font-size: pxToRem(10);
+}
+
+.form-group > label {
+	color: $body-color;
+}
+
+.btn-link {
+	&:focus,
+	&:hover,
+	&:active {
+		outline: none;
+		box-shadow: none;
+		color: $body-color;
+		text-decoration: none;
+	}
+}
+
+.badge {
+	background-color: lighten($color: $dark-orange, $amount: 30);
+	color: darken($color: $dark-orange, $amount: 20);
+}
+
+.widget-title {
+	color: $gray;
+	border-bottom: solid 2px $medium;
+	padding-bottom: 0.75rem;
+}
+
+.form-check-label {
+	line-height: 1.5rem;
+}
+
+.break-word {
+	word-break: break-word;
+}
+
+.close {
+	&:focus,
+	&:hover,
+	&:active {
+		outline: none;
+		box-shadow: none;
+		border: none;
+	}
+}
+
+.is-link-card .badge {
+	background-color: lighten($color: $warning, $amount: 30);
+	color: darken($color: $warning, $amount: 20);
+}
+
+.is-file-card .badge {
+	background-color: lighten($color: $dark-orange, $amount: 30);
+	color: darken($color: $dark-orange, $amount: 20);
+}
+
+.category-SolidPress-talks .badge {
+	background-color: lighten($color: $light-blue, $amount: 30);
+	color: darken($color: $light-blue, $amount: 20);
+}
+
+table td {
+	vertical-align: top;
+}

@@ -1,0 +1,51 @@
+{
+	"folders": [
+		{
+			// WordPress root folder
+			"name": "Wordpress",
+			"path": "../../../"
+		},
+		{
+			// Main theme folder
+			"name": "Theme",
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			// Share etiding configurations like identation, end of line, charset and more
+			"editorconfig.editorconfig",
+			// PHP language helper (you need to disable default PHP Language Features from VSCode)
+			"bmewburn.vscode-intelephense-client",
+			// Better Formatter of HTML in PHP files
+			"rifi2k.format-html-in-php",
+			// Code Formatter
+			"esbenp.prettier-vscode",
+			// Extension to run phpcbf onSave
+			"emeraldwalk.runonsave",
+			// PHPCS warnings
+			"ikappas.phpcs"
+		]
+	},
+	"settings": {
+		// Enable formating when saving files
+		"editor.formatOnSave": true,
+		// Change default code formatter to Prettier
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		// Disable autoformat from Intelephense extension
+		"intelephense.format.enable": false,
+		// HTML auto formatting options
+		"html.format.maxPreserveNewLines": 1,
+		"html.format.wrapAttributes": "preserve",
+		"phpcs.showSources": true,
+		// Run phpcbf onSave for .php files
+		"emeraldwalk.runonsave": {
+			"commands": [
+				{
+					"match": "\\.php$",
+					"cmd": "./vendor/bin/phpcbf ${file}"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "piassi/solidpress-theme",
+	"description": "Solidpress Base Theme",
+	"type": "project",
+	"require": {
+		"piassi/solidpress": "^1.1",
+		"apfelbox/php-file-download": "^2.1"
+	},
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Thales Piassi",
+			"email": "thales.piassi.nunes@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Theme\\": "src/"
+		}
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^2.3",
+		"paulthewalton/acf-stubs": "^5.8"
+	}
+}
