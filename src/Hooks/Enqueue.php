@@ -72,10 +72,7 @@ class Enqueue extends Hook {
 	public static function get_template_name(): string {
 		$template_name = 'index';
 
-		if ( is_front_page() ) {
-			// Home
-			$template_name = 'front-page';
-		} elseif ( is_archive() ) {
+		if ( is_archive() ) {
 			$template_name = 'archive';
 		} elseif ( is_search() ) {
 			$template_name = 'search';

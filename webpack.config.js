@@ -1,9 +1,12 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const entry = require('./entry.js');
+
+console.log(entry);
 
 module.exports = {
 	context: __dirname,
@@ -13,7 +16,7 @@ module.exports = {
 		filename: '[name].js'
 	},
 	mode: 'development',
-	devtool: 'cheap-eval-source-map',
+	devtool: 'eval-cheap-source-map',
 	module: {
 		rules: [
 			{
@@ -36,13 +39,25 @@ module.exports = {
 				loader: 'eslint-loader'
 			},
 			{
-				test: /\.jsx?$/,
-				loader: 'babel-loader'
+				test: /\.m?js$/,
+				exclude: /node_modules/,
+				use: {
+				  loader: 'babel-loader',
+				  options: {
+					presets: [
+					  ['@babel/preset-env', { targets: "defaults" }]
+					]
+				  }
+				}
 			},
 			{
-				test: /\.s?css$/,
-				use: [MiniCssExtractPlugin.loader, 'css-loader?url=false', 'sass-loader']
-			},
+				test: /\.s[ac]ss$/i,
+				use: [
+				  "style-loader",
+				  "css-loader",
+				  "sass-loader",
+				],
+			  },
 			{
 				test: /\.(jpe?g|png|gif)\$/,
 				use: [
@@ -68,6 +83,6 @@ module.exports = {
 		})
 	],
 	optimization: {
-		minimizer: [new UglifyJsPlugin(), new OptimizeCssAssetsPlugin()]
+		minimizer: [/*new UglifyJsPlugin(),*/ new CssMinimizerPlugin()]
 	}
 };

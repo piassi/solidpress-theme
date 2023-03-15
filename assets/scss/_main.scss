@@ -9,16 +9,11 @@
 @import '../../components/header';
 
 // Additional imports
-@import '../../node_modules/animate.css/animate.min.css';
 
 $font-size-sm: 0.85rem;
 
 .page-wrapper {
 	overflow: hidden;
-}
-
-.animate-in-view {
-	opacity: 0;
 }
 
 .text-sm {
