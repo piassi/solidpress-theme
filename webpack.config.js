@@ -5,8 +5,6 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const entry = require('./entry.js');
 
-console.log(entry);
-
 module.exports = {
 	context: __dirname,
 	entry,
@@ -72,6 +70,9 @@ module.exports = {
 			}
 		]
 	},
+	externals: {
+		jquery: 'jQuery',
+	},
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
@@ -82,6 +83,6 @@ module.exports = {
 		})
 	],
 	optimization: {
-		minimizer: [new TerserPlugin(), new CssMinimizerPlugin()]
+		minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
 	}
 };

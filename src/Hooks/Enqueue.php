@@ -33,8 +33,6 @@ class Enqueue extends Hook {
 			return;
 		}
 
-		global $theme_class;
-
 		// Theme scripts & styles
 		$css_path = sprintf(
 			get_template_directory_uri() . '/dist/%s.css',
@@ -47,14 +45,14 @@ class Enqueue extends Hook {
 		);
 
 		wp_enqueue_style(
-			'piassi-style',
+			'solidpress-style',
 			$css_path,
 			array(),
 			filemtime( get_template_directory( $css_path ) )
 		);
 
 		wp_enqueue_script(
-			'piassi-scripts',
+			'solidpress-scripts',
 			$js_path . '#defer',
 			array( 'jquery' ),
 			filemtime( get_template_directory( $js_path ) ),
