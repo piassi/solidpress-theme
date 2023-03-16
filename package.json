@@ -6,9 +6,9 @@
 	"scripts": {
 		"build": "webpack --mode=production",
 		"dev": "webpack --watch",
-		"eslint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-		"eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-		"format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
+		"eslint": "eslint \"**/*.{js,jsx}\" --quiet",
+		"eslint:fix": "eslint \"**/*.{js,jsx}\" --quiet --fix",
+		"format": "prettier --write \"**/*.{js,jsx,scss}\"",
 		"wp-pot": "wp-pot --src '**/*.php' --dest-file 'languages/piassi.pot' --domain 'piassi'"
 	},
 	"repository": {
