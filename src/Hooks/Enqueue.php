@@ -38,12 +38,6 @@ class Enqueue extends Hook {
 			get_template_directory_uri() . '/dist/%s.css',
 			$template_name
 		);
-
-		$js_path = sprintf(
-			get_template_directory_uri() . '/dist/%s.js',
-			$template_name
-		);
-
 		wp_enqueue_style(
 			'solidpress-style',
 			$css_path,
@@ -51,6 +45,28 @@ class Enqueue extends Hook {
 			filemtime( get_template_directory( $css_path ) )
 		);
 
+		$shared_css_path = get_template_directory_uri() . '/dist/shared.css';
+		wp_enqueue_style(
+			'shared-styles',
+			$shared_css_path,
+			array(),
+			filemtime( get_template_directory( $shared_css_path ) )
+		);
+
+		$shared_js_path = get_template_directory_uri() . '/dist/shared.js' ;
+		wp_enqueue_script(
+			'shared-scripts',
+			$shared_js_path . '#defer',
+			array( 'jquery' ),
+			filemtime( get_template_directory( $shared_js_path ) ),
+			true
+		);
+
+
+		$js_path = sprintf(
+			get_template_directory_uri() . '/dist/%s.js',
+			$template_name
+		);
 		wp_enqueue_script(
 			'solidpress-scripts',
 			$js_path . '#defer',

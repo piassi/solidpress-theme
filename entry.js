@@ -5,12 +5,14 @@ const fs = require('fs');
 function getWebpackEntries() {
 	const directoryPath = path.join(__dirname, 'pages');
 
-	const assets = {};
+	const assets = {
+		shared: [ './assets/js/shared.js']
+	};
 
 	const files = fs.readdirSync(directoryPath);
 
 	files.forEach(function(file) {
-		assets[file] = [`./pages/${file}/scripts.js`, `./pages/${file}/styles.scss`];
+		assets[file] ={ import: `./pages/${file}/scripts.js`, dependOn: 'shared' };
 	});
 
 	return assets;

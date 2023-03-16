@@ -10,7 +10,8 @@ module.exports = {
 	entry,
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].js'
+		filename: '[name].js',
+		clean: true
 	},
 	mode: 'development',
 	devtool: 'eval-cheap-source-map',
@@ -50,7 +51,7 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/i,
 				use: [
-				  "style-loader",
+					MiniCssExtractPlugin.loader,
 				  "css-loader",
 				  "sass-loader",
 				],
