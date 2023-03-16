@@ -1,17 +1,17 @@
 import $ from 'jquery';
 import lozad from 'lozad';
 
-$(window).ready(function() {
+jQuery(function () {
 	lozad('.lozad', {
-		loaded: img => {
+		loaded: (img) => {
 			const image = $(img);
 			if (img.complete) {
 				image.addClass('lazy-loaded');
 			} else {
-				image.on('load', event => {
+				image.on('load', () => {
 					image.addClass('lazy-loaded');
 				});
 			}
-		}
+		},
 	}).observe();
 });

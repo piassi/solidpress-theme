@@ -1,50 +1,55 @@
 {
-  "name": "solidpress-theme",
-  "version": "1.0.0",
-  "description": "This is a WordPress starter theme for developers, it includes:",
-  "main": "entry.js",
-  "scripts": {
-    "build": "webpack --mode=production",
-    "dev": "webpack --watch",
-    "eslint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-    "format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
-    "stylelint": "stylelint \"src/**/*.{css,scss}\"",
-    "stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix",
-    "wp-pot": "wp-pot --src '**/*.php' --dest-file 'languages/piassi.pot' --domain 'piassi'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/piassi/solidpress-theme.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/piassi/solidpress-theme/issues"
-  },
-  "homepage": "https://github.com/piassi/solidpress-theme#readme",
-  "devDependencies": {
-    "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^9.1.2",
-    "browser-sync-webpack-plugin": "^2.3.0",
-    "css-loader": "^6.7.3",
-    "css-minimizer-webpack-plugin": "^4.2.2",
-    "mini-css-extract-plugin": "^2.7.3",
-    "sass": "^1.59.3",
-    "sass-loader": "^13.2.0",
-    "style-loader": "^3.3.2",
-    "terser-webpack-plugin": "^5.3.7",
-    "webfonts-loader": "^8.0.1",
-    "webpack": "^5.76.1",
-    "webpack-cli": "^5.0.1"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.3",
-    "jquery": "^3.6.4",
-    "lozad": "^1.16.0",
-    "smoothscroll-polyfill": "^0.4.4"
-  }
+	"name": "solidpress-theme",
+	"version": "1.0.0",
+	"description": "This is a WordPress starter theme for developers, it includes:",
+	"main": "entry.js",
+	"scripts": {
+		"build": "webpack --mode=production",
+		"dev": "webpack --watch",
+		"eslint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+		"eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
+		"format": "prettier --write \"src/**/*.{js,jsx,scss}\"",
+		"wp-pot": "wp-pot --src '**/*.php' --dest-file 'languages/piassi.pot' --domain 'piassi'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/piassi/solidpress-theme.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/piassi/solidpress-theme/issues"
+	},
+	"homepage": "https://github.com/piassi/solidpress-theme#readme",
+	"devDependencies": {
+		"@babel/core": "^7.21.3",
+		"@babel/eslint-parser": "^7.21.3",
+		"@babel/preset-env": "^7.20.2",
+		"@wordpress/eslint-plugin": "^14.2.0",
+		"babel-loader": "^9.1.2",
+		"browser-sync-webpack-plugin": "^2.3.0",
+		"css-loader": "^6.7.3",
+		"css-minimizer-webpack-plugin": "^4.2.2",
+		"eslint": "^8.36.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-webpack-plugin": "^4.0.0",
+		"mini-css-extract-plugin": "^2.7.3",
+		"prettier": "2.8.4",
+		"sass": "^1.59.3",
+		"sass-loader": "^13.2.0",
+		"style-loader": "^3.3.2",
+		"terser-webpack-plugin": "^5.3.7",
+		"webfonts-loader": "^8.0.1",
+		"webpack": "^5.76.1",
+		"webpack-cli": "^5.0.1"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.11.6",
+		"bootstrap": "^5.2.3",
+		"jquery": "^3.6.4",
+		"lozad": "^1.16.0",
+		"regenerator-runtime": "^0.13.11",
+		"smoothscroll-polyfill": "^0.4.4"
+	}
 }

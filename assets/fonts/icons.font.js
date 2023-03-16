@@ -8,5 +8,5 @@ module.exports = {
 	fileName: './[fontname].[ext]',
 	writeFiles: true,
 	cssFontsPath: './',
-	dest: './dist/fonts/'
+	dest: './dist/fonts/',
 };
