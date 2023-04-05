@@ -1,6 +1,6 @@
 <?php
 
-namespace Theme\Pages;
+namespace Theme\Pages\PageNotFound;
 
 use SolidPress\Core\Page;
 use Theme\Components\Message404\Message404;
