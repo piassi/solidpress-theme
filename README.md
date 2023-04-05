@@ -2,10 +2,10 @@
 
 This is a WordPress starter theme for developers, it includes:
 
--   Assets bundling and hot-reload with webpack (thanks to [carrieford \_s with webpack](https://carrieforde.com/webpack-wordpress/))
+-   Assets bundling and hot-reload with webpack
 -   NPM - JS dependency management
 -   Composer - PHP dependency management
--   Bootstrap
+-   Tailwind
 -   Basic SolidPress configuration
 
 You can check out more about SolidPress [here](https://github.com/piassi/solidpress)
