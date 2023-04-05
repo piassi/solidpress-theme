@@ -3,8 +3,7 @@
 	"description": "Solidpress Base Theme",
 	"type": "project",
 	"require": {
-		"piassi/solidpress": "^1.1",
-		"apfelbox/php-file-download": "^2.1"
+		"piassi/solidpress": "^1"
 	},
 	"license": "MIT",
 	"authors": [
@@ -20,6 +19,6 @@
 	},
 	"require-dev": {
 		"wp-coding-standards/wpcs": "^2.3",
-		"paulthewalton/acf-stubs": "^5.8"
+		"php-stubs/acf-pro-stubs": "^6.0"
 	}
 }

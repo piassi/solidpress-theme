@@ -4,62 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "640cfeae39fcfe2e68812bfcce43bed4",
+    "content-hash": "4586e52140df85c13b4d05967c4c4168",
     "packages": [
         {
-            "name": "apfelbox/php-file-download",
-            "version": "v2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/apfelbox/PHP-File-Download.git",
-                "reference": "01b0461e02e7514ccb8804cee9260e0b61e04069"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/apfelbox/PHP-File-Download/zipball/01b0461e02e7514ccb8804cee9260e0b61e04069",
-                "reference": "01b0461e02e7514ccb8804cee9260e0b61e04069",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3",
-                "skyzyx/mimetypes": "~1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Apfelbox\\FileDownload\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jannik Zschiesche",
-                    "email": "hello@apfelbox.net",
-                    "homepage": "http://apfelbox.net"
-                }
-            ],
-            "description": "A library to help with creating downloads for files in PHP",
-            "homepage": "https://github.com/apfelbox/PHP-File-Download",
-            "keywords": [
-                "download"
-            ],
-            "time": "2014-02-10T17:12:20+00:00"
-        },
-        {
             "name": "piassi/solidpress",
-            "version": "1.1.10",
+            "version": "1.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/piassi/solidpress.git",
-                "reference": "38e3af33dd378e84820154d6d340c1575dd6459b"
+                "reference": "21bd82aabee1932ce7879a105fd59dd66b1bb3c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piassi/solidpress/zipball/38e3af33dd378e84820154d6d340c1575dd6459b",
-                "reference": "38e3af33dd378e84820154d6d340c1575dd6459b",
+                "url": "https://api.github.com/repos/piassi/solidpress/zipball/21bd82aabee1932ce7879a105fd59dd66b1bb3c2",
+                "reference": "21bd82aabee1932ce7879a105fd59dd66b1bb3c2",
                 "shasum": ""
             },
             "require-dev": {
@@ -83,116 +41,114 @@
                 }
             ],
             "description": "Solid foundation for wordpress themes",
-            "time": "2020-08-25T19:25:54+00:00"
-        },
-        {
-            "name": "skyzyx/mimetypes",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/skyzyx/mimetypes.git",
-                "reference": "bf8a41a13b187812fd9e71caaeee5c97ea4f0221"
+            "support": {
+                "issues": "https://github.com/piassi/solidpress/issues",
+                "source": "https://github.com/piassi/solidpress/tree/1.1.11"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/skyzyx/mimetypes/zipball/bf8a41a13b187812fd9e71caaeee5c97ea4f0221",
-                "reference": "bf8a41a13b187812fd9e71caaeee5c97ea4f0221",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "dflydev/apache-mime-types": "1.0.*@dev",
-                "twig/twig": "1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Skyzyx\\Components\\Mimetypes": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ryan Parman",
-                    "homepage": "http://ryanparman.com",
-                    "role": "Vanity Developer"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "http://github.com/skyzyx/mimetypes/contributors"
-                }
-            ],
-            "description": "Creates a JSON document containing a thorough list of file extensions => mime types as provided by the Apache httpd project.",
-            "homepage": "http://github.com/skyzyx/mimetypes",
-            "keywords": [
-                "dictionary",
-                "map",
-                "mime",
-                "mimetype"
-            ],
-            "time": "2013-03-31T11:50:02+00:00"
+            "time": "2020-10-02T17:29:28+00:00"
         }
     ],
     "packages-dev": [
         {
-            "name": "paulthewalton/acf-stubs",
-            "version": "5.8.7",
+            "name": "php-stubs/acf-pro-stubs",
+            "version": "v6.0.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/paulthewalton/acf-stubs.git",
-                "reference": "722096c127186c41ac98395b418195d1db9cf576"
+                "url": "https://github.com/php-stubs/acf-pro-stubs.git",
+                "reference": "3301f61c975ee6078fc89c1f6ba70358349ea137"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paulthewalton/acf-stubs/zipball/722096c127186c41ac98395b418195d1db9cf576",
-                "reference": "722096c127186c41ac98395b418195d1db9cf576",
+                "url": "https://api.github.com/repos/php-stubs/acf-pro-stubs/zipball/3301f61c975ee6078fc89c1f6ba70358349ea137",
+                "reference": "3301f61c975ee6078fc89c1f6ba70358349ea137",
                 "shasum": ""
             },
+            "require": {
+                "php-stubs/wordpress-stubs": "^4.7 || ^5.0 || ^6.0"
+            },
             "require-dev": {
-                "ext-gettext": "*",
-                "giacocorsiglia/stubs-generator": "^0.5.0",
-                "giacocorsiglia/wordpress-stubs": "*",
-                "php": "^7.1",
-                "wpackagist-plugin/advanced-custom-fields": "5.8.7"
+                "php": "~7.1",
+                "php-stubs/generator": "^0.8"
+            },
+            "suggest": {
+                "symfony/polyfill-php73": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
+                "szepeviktor/phpstan-wordpress": "WordPress extensions for PHPStan"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "Paul Walton",
-                    "email": "pwalton@live.ca",
-                    "role": "copycat"
-                }
-            ],
-            "description": "Based on giacocorsiglia/wordpress-stubs. Advanced Custom Fields function, class, and global variable declaration stubs for easier static analysis.",
+            "description": "Advanced Custom Fields PRO stubs for static analysis.",
+            "homepage": "https://github.com/php-stubs/acf-pro-stubs",
             "keywords": [
+                "PHPStan",
                 "acf",
-                "advanced custom fields",
                 "static analysis",
                 "wordpress"
             ],
-            "time": "2019-12-04T19:26:53+00:00"
+            "support": {
+                "issues": "https://github.com/php-stubs/acf-pro-stubs/issues",
+                "source": "https://github.com/php-stubs/acf-pro-stubs/tree/v6.0.6"
+            },
+            "time": "2022-12-25T22:14:41+00:00"
         },
         {
-            "name": "squizlabs/php_codesniffer",
-            "version": "3.5.6",
+            "name": "php-stubs/wordpress-stubs",
+            "version": "v6.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "e97627871a7eab2f70e59166072a6b767d5834e0"
+                "url": "https://github.com/php-stubs/wordpress-stubs.git",
+                "reference": "b73fe99eadf9fb56363619dac0343b6d19907dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/e97627871a7eab2f70e59166072a6b767d5834e0",
-                "reference": "e97627871a7eab2f70e59166072a6b767d5834e0",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/b73fe99eadf9fb56363619dac0343b6d19907dce",
+                "reference": "b73fe99eadf9fb56363619dac0343b6d19907dce",
+                "shasum": ""
+            },
+            "require-dev": {
+                "nikic/php-parser": "< 4.12.0",
+                "php": "~7.3 || ~8.0",
+                "php-stubs/generator": "^0.8.3",
+                "phpdocumentor/reflection-docblock": "^5.3",
+                "phpstan/phpstan": "^1.9"
+            },
+            "suggest": {
+                "paragonie/sodium_compat": "Pure PHP implementation of libsodium",
+                "symfony/polyfill-php73": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
+                "szepeviktor/phpstan-wordpress": "WordPress extensions for PHPStan"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "WordPress function and class declaration stubs for static analysis.",
+            "homepage": "https://github.com/php-stubs/wordpress-stubs",
+            "keywords": [
+                "PHPStan",
+                "static analysis",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/php-stubs/wordpress-stubs/issues",
+                "source": "https://github.com/php-stubs/wordpress-stubs/tree/v6.2.0"
+            },
+            "time": "2023-03-31T09:48:52+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/ed8e00df0a83aa96acf703f8c2979ff33341f879",
+                "reference": "ed8e00df0a83aa96acf703f8c2979ff33341f879",
                 "shasum": ""
             },
             "require": {
@@ -228,9 +184,15 @@
             "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
-                "standards"
+                "standards",
+                "static analysis"
             ],
-            "time": "2020-08-10T04:50:15+00:00"
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "time": "2023-02-22T23:07:41+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
@@ -276,6 +238,11 @@
                 "standards",
                 "wordpress"
             ],
+            "support": {
+                "issues": "https://github.com/WordPress/WordPress-Coding-Standards/issues",
+                "source": "https://github.com/WordPress/WordPress-Coding-Standards",
+                "wiki": "https://github.com/WordPress/WordPress-Coding-Standards/wiki"
+            },
             "time": "2020-05-13T23:57:56+00:00"
         }
     ],
@@ -286,5 +253,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.3.0"
 }
