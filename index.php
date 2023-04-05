@@ -7,11 +7,12 @@
  * @package SolidPress
  */
 
-use Theme\Pages;
-use Theme\Components;
+use Theme\Components\Footer\Footer;
+use Theme\Components\Header\Header;
+use Theme\Pages\Index\Index;
 
 get_header();
-echo new Components\Header();
-echo new Pages\Index();
-echo new Components\Footer();
+echo new Header();
+echo new Index();
+echo new Footer();
 get_footer();

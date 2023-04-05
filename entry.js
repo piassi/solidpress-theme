@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 function getWebpackEntries() {
-	const directoryPath = path.join(__dirname, 'pages');
+	const directoryPath = path.join(__dirname, 'src', 'Pages');
 
 	const assets = {
 		main: ['./assets/js/main.js'],
@@ -12,7 +12,7 @@ function getWebpackEntries() {
 	const files = fs.readdirSync(directoryPath);
 
 	files.forEach(function (file) {
-		const pageJsFilePath = `./pages/${file}/scripts.js`;
+		const pageJsFilePath = `./src/Pages/${file}/scripts.js`;
 
 		if (!fs.existsSync(pageJsFilePath)) {
 			return;

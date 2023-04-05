@@ -7,13 +7,12 @@
  * @package SolidPress
  */
 
-use Theme\Pages;
-use Theme\Components;
+use Theme\Components\Footer\Footer;
+use Theme\Components\Header\Header;
+use Theme\Pages\PageNotFound;
 
 get_header();
-echo new Components\Header();
-
-echo new Pages\PageNotFound();
-
-echo new Components\Footer();
+echo new Header();
+echo new PageNotFound();
+echo new Footer();
 get_footer();

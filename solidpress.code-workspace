@@ -16,9 +16,7 @@
 			// Share etiding configurations like identation, end of line, charset and more
 			"editorconfig.editorconfig",
 			// PHP language helper (you need to disable default PHP Language Features from VSCode)
-			"bmewburn.vscode-intelephense-client",
-			// Better Formatter of HTML in PHP files
-			"rifi2k.format-html-in-php",
+			"DEVSENSE.phptools-vscode",
 			// Code Formatter
 			"esbenp.prettier-vscode",
 			// Extension to run phpcbf onSave
@@ -38,6 +36,7 @@
 		"html.format.maxPreserveNewLines": 1,
 		"html.format.wrapAttributes": "preserve",
 		"phpcs.showSources": true,
+		"editor.formatOnType": true,
 		// Run phpcbf onSave for .php files
 		"emeraldwalk.runonsave": {
 			"commands": [
@@ -46,6 +45,10 @@
 					"cmd": "./vendor/bin/phpcbf ${file}"
 				}
 			]
-		}
+		},
+		"[php]": {
+			"editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+		},
+		"php.format.codeStyle": "WordPress"
 	}
 }
