@@ -7,7 +7,8 @@
 	"extends": ["plugin:@wordpress/eslint-plugin/recommended", "prettier"],
 	"parser": "@babel/eslint-parser",
 	"rules": {
-		"prettier/prettier": "error"
+		"prettier/prettier": "error",
+		"no-console": "warn"
 	},
 	"parserOptions": {
 		"ecmaFeatures": {

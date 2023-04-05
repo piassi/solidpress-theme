@@ -45,20 +45,20 @@ class Enqueue extends Hook {
 			filemtime( get_template_directory( $css_path ) )
 		);
 
-		$shared_css_path = get_template_directory_uri() . '/dist/shared.css';
+		$main_css_path = get_template_directory_uri() . '/dist/main.css';
 		wp_enqueue_style(
-			'shared-styles',
-			$shared_css_path,
+			'main-styles',
+			$main_css_path,
 			array(),
-			filemtime( get_template_directory( $shared_css_path ) )
+			filemtime( get_template_directory( $main_css_path ) )
 		);
 
-		$shared_js_path = get_template_directory_uri() . '/dist/shared.js' ;
+		$main_js_path = get_template_directory_uri() . '/dist/main.js' ;
 		wp_enqueue_script(
-			'shared-scripts',
-			$shared_js_path . '#defer',
+			'main-scripts',
+			$main_js_path . '#defer',
 			array( 'jquery' ),
-			filemtime( get_template_directory( $shared_js_path ) ),
+			filemtime( get_template_directory( $main_js_path ) ),
 			true
 		);
 

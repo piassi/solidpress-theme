@@ -1,11 +1,8 @@
+import 'regenerator-runtime/runtime.js';
 import './lazyLoad';
 import '../../components/header';
 import '../fonts/icons.font';
-import 'regenerator-runtime/runtime.js';
-import '../scss/shared.scss';
-
-// boostrap modules
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '../css/main.css';
 
 import { scrollWindowToElement } from './scroll';
 import $ from 'jquery';
@@ -23,7 +20,7 @@ jQuery(function () {
 		}
 
 		if (headerRef.find('.toggle-menu').hasClass('active')) {
-			headerRef.find('.toggle-menu').click();
+			headerRef.find('.toggle-menu').trigger('click');
 		}
 	});
 });

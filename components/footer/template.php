@@ -12,8 +12,8 @@ use Theme\Components;
 
 ?>
 
-<footer class="_footer bg-light py-8 mt-8">
-    <div class="container flex-center flex-column">
+<footer class="_footer bg-gray-400">
+    <div class="container flex justify-center items-center">
         <?php
 		echo new Components\LazyImage(
             array(
