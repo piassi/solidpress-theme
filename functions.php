@@ -9,13 +9,14 @@
 
 use SolidPress\Core\Theme;
 use SolidPress\Core\WPTemplate;
+use Theme\Layouts\DefaultLayout;
 
 add_filter( 'use_block_editor_for_post', '__return_false' );
 
 // Composer autoload
 require get_template_directory() . '/vendor/autoload.php';
 
-$registrable_namespaces = array();
+$registrable_namespaces = [];
 
 // Check if ACF plugin is active to register fields
 if ( function_exists( 'acf_add_local_field_group' ) ) {
@@ -25,8 +26,8 @@ if ( function_exists( 'acf_add_local_field_group' ) ) {
 
 // Set core registrables
 $registrable_namespaces = array_merge(
-    $registrable_namespaces,
-    array(
+	$registrable_namespaces,
+	array(
 		'Taxonomies',
 		'PostTypes',
 		'Hooks',
@@ -34,12 +35,12 @@ $registrable_namespaces = array_merge(
 );
 
 // Setup a theme instance for SolidPress
-global $theme_class;
-$theme_class = new Theme(
-    array(
-		'template_engine'        => new WPTemplate(),
-		'namespace'              => 'Theme',
-		'base_folder'            => 'src',
-		'registrable_namespaces' => $registrable_namespaces,
-    )
-);
+Theme::get_instance()->init( [ 
+	'template_engine' => new WPTemplate(),
+	// 'default_layout' => new DefaultLayout(),
+	'namespace' => 'Theme',
+	'base_folder' => 'src',
+	'registrable_namespaces' => $registrable_namespaces,
+] );
+
+Theme::get_instance()->set_default_layout( DefaultLayout::class);

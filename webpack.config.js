@@ -12,7 +12,9 @@ module.exports = {
 	entry,
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].js',
+		filename: (pathData) => {
+			return pathData.chunk.name === 'main' ? '[name].js' : '[name]/scripts.js';
+		},
 		clean: true,
 	},
 	mode: 'development',
@@ -73,7 +75,9 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: '[name].css',
+			filename: (pathData) => {
+				return pathData.chunk.name === 'main' ? '[name].css' : '[name]/styles.css';
+			},
 		}),
 		new BrowserSyncPlugin({
 			files: '**/*.php',

@@ -1,17 +1,8 @@
 <?php
-/**
- * Index page router
- *
- * @see Theme\Pages\Index
- *
- * @package SolidPress
- */
+use SolidPress\Core\Theme;
 
-use Theme\Pages;
-use Theme\Components;
+$theme = Theme::get_instance();
+$current_page = $theme->get_current_page();
+$layout = $current_page->layout ?? $theme->get_default_layout();
 
-get_header();
-echo new Components\Header();
-echo new Pages\Index();
-echo new Components\Footer();
-get_footer();
+echo new $layout( [ 'page' => $current_page ] );

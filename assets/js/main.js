@@ -1,6 +1,6 @@
 import 'regenerator-runtime/runtime.js';
 import './lazyLoad';
-import '../../components/header';
+import '../../src/Components/Header';
 import '../fonts/icons.font';
 import '../css/main.css';
 
