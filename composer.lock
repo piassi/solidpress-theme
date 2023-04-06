@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4586e52140df85c13b4d05967c4c4168",
+    "content-hash": "ca06257505a43e31bc9b8faec7639c86",
     "packages": [
         {
             "name": "piassi/solidpress",
-            "version": "1.1.11",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/piassi/solidpress.git",
-                "reference": "21bd82aabee1932ce7879a105fd59dd66b1bb3c2"
+                "reference": "950377861e3b0ba969169dbbde41306ee60c0b4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/piassi/solidpress/zipball/21bd82aabee1932ce7879a105fd59dd66b1bb3c2",
-                "reference": "21bd82aabee1932ce7879a105fd59dd66b1bb3c2",
+                "url": "https://api.github.com/repos/piassi/solidpress/zipball/950377861e3b0ba969169dbbde41306ee60c0b4b",
+                "reference": "950377861e3b0ba969169dbbde41306ee60c0b4b",
                 "shasum": ""
             },
             "require-dev": {
@@ -43,9 +43,9 @@
             "description": "Solid foundation for wordpress themes",
             "support": {
                 "issues": "https://github.com/piassi/solidpress/issues",
-                "source": "https://github.com/piassi/solidpress/tree/1.1.11"
+                "source": "https://github.com/piassi/solidpress/tree/1.2.0"
             },
-            "time": "2020-10-02T17:29:28+00:00"
+            "time": "2023-04-06T13:24:18+00:00"
         }
     ],
     "packages-dev": [

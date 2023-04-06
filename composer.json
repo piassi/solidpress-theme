@@ -3,7 +3,7 @@
 	"description": "Solidpress Base Theme",
 	"type": "project",
 	"require": {
-		"piassi/solidpress": "^1"
+		"piassi/solidpress": "^1.2"
 	},
 	"license": "MIT",
 	"authors": [
