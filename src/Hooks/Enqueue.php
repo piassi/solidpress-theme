@@ -28,7 +28,7 @@ class Enqueue extends Hook {
 	 * @return void
 	 */
 	public function enqueue_template_scripts(): void {
-		$current_page = Theme::get_current_page();
+		$current_page = Theme::get_instance()->get_current_page();
 
 		$main_css_path = get_template_directory_uri() . '/dist/main.css';
 		wp_enqueue_style(

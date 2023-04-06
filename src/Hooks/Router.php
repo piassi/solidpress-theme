@@ -9,17 +9,19 @@ use Theme\Pages\PageNotFound\PageNotFound;
 
 class Router extends Hook {
 	public function __construct() {
-		$this->add_action( 'wp_loaded', 'routing' );
+		$this->add_action( 'template_redirect', 'routing' );
 	}
 
 	public function routing() {
+		$theme = Theme::get_instance();
+
 		switch ( true ) {
 			case is_404():
-				Theme::set_current_page( new PageNotFound() );
+				$theme->set_current_page( new PageNotFound() );
 				break;
 
 			default:
-				Theme::set_current_page( new Index() );
+				$theme->set_current_page( new Index() );
 				break;
 		}
 	}

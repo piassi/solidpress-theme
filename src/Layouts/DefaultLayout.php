@@ -1,5 +1,5 @@
 <?php
-namespace Theme\Pages\Layouts;
+namespace Theme\Layouts;
 
 use SolidPress\Core\Page;
 use Theme\Components\Footer\Footer;

@@ -1,5 +1,8 @@
 <?php
-use Theme\Pages\Index\Index;
-use Theme\Pages\Layouts\DefaultLayout;
+use SolidPress\Core\Theme;
 
-echo new DefaultLayout( [ 'page' => new Index() ] );
+$theme = Theme::get_instance();
+$current_page = $theme->get_current_page();
+$layout = $current_page->layout ?? $theme->get_default_layout();
+
+echo new $layout( [ 'page' => $current_page ] );
