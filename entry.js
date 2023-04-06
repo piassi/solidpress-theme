@@ -18,7 +18,9 @@ function getWebpackEntries() {
 			return;
 		}
 
-		assets[file] = {
+		const fileName = file.toLowerCase();
+
+		assets[fileName] = {
 			import: pageJsFilePath,
 			dependOn: 'main',
 		};
